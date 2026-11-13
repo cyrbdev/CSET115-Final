@@ -9,6 +9,7 @@ let player2ScoreText = document.getElementById("player2Score");
 let drawScoreText = document.getElementById("score");
 let boxes = document.querySelectorAll(".box");
 let currentPlayer = "X";
+let resetButton = document.getElementById("reset-btn");
 let condition = [
     [0, 1, 2],
     [3, 4, 5],
@@ -93,3 +94,7 @@ function resetBoard() {
     }
     currentPlayer = "X";
 }
+
+resetButton.addEventListener("click", function() {
+    resetBoard();
+});
