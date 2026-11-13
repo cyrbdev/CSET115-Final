@@ -18,6 +18,10 @@ let condition = [
 let board = ["", "", "", "", "", "", "", "", ""];
 
 function checkWinner() {
-    for (let i = 0; i<board.length; i++) {
+    for (let i = 0; i<condition.length; i++) {
+        let combination = condition[i];
+        let a = combination[0]
+        let b = combination[1]
+        let c = combination[2]
     }
 }
